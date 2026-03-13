@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Income Tax Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Income Tax Management System</h1>
+
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Annual Income (₹)</label>
+<input type="number" id="income">
+
+<label>Tax Saving Investment (₹)</label>
+<input type="number" id="investment">
+
+<button onclick="calculateTax()">Calculate Tax</button>
+
+<div id="result"></div>
+
+<h3>Tax Slabs</h3>
+
+<table>
+<tr>
+<th>Income Range</th>
+<th>Tax Rate</th>
+</tr>
+
+<tr>
+<td>0 - 2.5 Lakh</td>
+<td>0%</td>
+</tr>
+
+<tr>
+<td>2.5 - 5 Lakh</td>
+<td>5%</td>
+</tr>
+
+<tr>
+<td>5 - 10 Lakh</td>
+<td>20%</td>
+</tr>
+
+<tr>
+<td>Above 10 Lakh</td>
+<td>30%</td>
+</tr>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
